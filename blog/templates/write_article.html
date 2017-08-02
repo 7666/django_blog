@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="/static/js/kindeditor-4.1.10/kindeditor-min.js"></script>
+  <script type="text/javascript" src="/static/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
+  <script type="text/javascript" src="/static/js/kindeditor-4.1.10/config.js"></script>
+    <meta charset="utf-8">
+    <title>写文章</title>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      {%csrf_token%}
+      <li>{{ form.title.label }}:{{ form.title }}</li>
+      <li>{{ form.desc.label }}:{{ form.desc }}</li>
+      <li>{{ form.click_count.label }}:{{ form.click_count }}</li>
+      <li>{{ form.is_recommend.label }}:{{ form.is_recommend }}</li>
+      <li>{{ form.content.label }}:{{ form.content }}</li>
+      <input type="submit" name="" value="提交文章">
+    </form>
+  </body>
+</html>
